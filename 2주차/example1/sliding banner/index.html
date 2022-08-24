@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<title>슬라이드 배너 예제</title>
+
+	<!-- css 정의 -->
+	<style type="text/css">
+		* { padding:0px; margin:0px; }
+		#warp { position:absolute; top:200px; left:400px; }
+		#mask { float:left; overflow:hidden; width:400px; height:200px; }
+
+		#content { width:5000px; } /* 배너 1개 가로 크기 * 총 개수 */
+		#content dd { float:left; width:400px; height:200px; }
+		#content img { width:400px; }
+
+		#prevbtn { float:left; cursor:pointer; position:relative; top:90px; width:14px; height:28px; padding-right:20px; }
+		#nextbtn { float:left; cursor:pointer; position:relative; top:90px; width:14px; height:28px; padding-left:20px; }
+	</style>
+
+	<!-- jquery 링크 -->
+	<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+	<!-- script 정의 -->
+	<script type="text/javascript">
+
+		var divWidth		= "400";	//배너 1개 가로크기
+
+		//이전
+		function prev()
+		{
+			$("#content").stop(true,true);
+
+			var moveX			= parseInt($("#content").css("margin-left"));
+
+			if( moveX < 0 )
+			{
+				$("#content").animate({"margin-left":"+=" + divWidth + "px"},500);
+			}
+			else
+			{
+				alert("처음 입니다.");
+				return;
+			}
+		}
+
+		//다음
+		function next()
+		{
+			$("#content").stop(true,true);
+
+			var hiddenWidth		= ($("#content dd").length-1)*(-divWidth);
+			var moveX			= parseInt($("#content").css("margin-left")) ;
+			var lastWidth		= ( moveX - divWidth );
+
+			if( hiddenWidth < moveX )
+			{
+				$("#content").animate({"margin-left":"-=" + divWidth + "px"},500);
+			}
+			else
+			{
+				alert("마지막 입니다.");
+				return;
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<div id="warp">
+		<div id="prevbtn" onclick="prev()"><img src="img/prev_img.gif" ></div>
+		<div id="mask">
+			<div id="content">
+				<dl>
+					<dt>
+						<dd><img src="img/dog01.jpg"></dd>
+						<dd><img src="img/dog02.jpg"></dd>
+						<dd><img src="img/dog03.jpg"></dd>
+						<dd><img src="img/dog04.jpg"></dd>
+						<dd><img src="img/dog05.jpg"></dd>
+						<dd><img src="img/dog06.jpg"></dd>
+						<dd><img src="img/dog07.jpg"></dd>
+					</dt>
+				</dl>
+			</div>
+		</div>
+		<div id="nextbtn" onclick="next()"><img src="img/next_img.gif"></div>
+	</div>
+
+</body>
+</html>

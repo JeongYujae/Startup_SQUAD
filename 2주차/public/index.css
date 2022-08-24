@@ -5,16 +5,12 @@
 	margin:0 auto;
 	padding: 0;
 	list-style: none;
-	font-family: "맑은 고딕";
   margin-bottom: 10px;
   box-sizing: border-box;
   margin: auto;
+  font-family: 'Yeon Sung', cursive;
 }
 
-.title{
-    font-size: 20px;
-    justify-content: center;
-}
 .frame {
     height: 100px;
     line-height: 100px;
@@ -40,12 +36,19 @@
 }
 
 .menu{
+  border-top: 5px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
     width: 100%;
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: center
   }
+
+.menu >a {
+  font-size: 30px;
+}
   
 
   header > h2 {
@@ -103,6 +106,9 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  letter-spacing: 2px;
+  line-height: 40px;
+  word-wrap:break-word;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -126,16 +132,16 @@ body {
   object-fit: cover;
 }
 
-#slide1{
-  background-color: green;
+#slide1, #slide2, #slide3{
+  background-color: black;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   color:white
 }
-#slide2{
-    background-color:red;
+/* #slide2{
+  background-color:red;
   color:white;
 
   display: block;
@@ -151,7 +157,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 
 /* .swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal{
@@ -205,28 +211,10 @@ body {
 }
 
 .num-active{
-  background-color: red;
+  border-radius: 10px;
+  background-color:darkturquoise
 }
 
-
-/* .banner{
-  width: 100%;
-  background-color: blue;
-  color: white;
-  min-height: 20%;
-}
-
-
-div.tab_right { 
-	left: 100%;
-  height: 20%;
-}
-
-div.tab_left, div.tab_right { 
-	width: 20%;
-  height: 20%;
-	position: absolute;
-} */
 
 h2{
   text-align: center;
@@ -241,12 +229,14 @@ p{
 
 
 .wrap-vertical{
-  width: 500px;
+  display: flex;
+  width: 30%;
   padding: 20px;
   overflow: scroll;
   color: #112031;
   background: #F0D9FF;
-  border: 1px solid #000;
+  border: 3px solid #000;
+  border-radius: 5px;
 
    /* 가로 스크롤 */
   overflow: auto;
@@ -256,12 +246,57 @@ p{
   display: none; 
 } */
 
-/* #banner1{
-  display: inline-block; 
-  min-width: 500px;
-  height: ;
+#banner1, #banner2, #banner3, #banner4, #banner5,#banner6,#banner7,#banner8,
+#banner9,#banner10,#banner11,#banner12
+{
+  display: inline-block;
+  padding: 20px;
+  min-height:max-content;
   background-color: darkgrey;
   margin-right: 10px;
   font-size: 25px;
+  border-radius: 10px;
   
-} */
+}
+
+@media screen and (max-width: 768px) {
+  *{
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Yeon Sung', cursive;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+
+  .swiper-slide{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .wrap-vertical{
+    width: 50%;
+  }
+  .swiper-pagination-bullet{
+    line-height: 10px;
+  }
+
+  #banner1, #banner2, #banner3, #banner4, #banner5,#banner6,#banner7,#banner8,
+  #banner9,#banner10,#banner11,#banner12{
+  padding: 15px;
+
+    font-size: 15px;
+  }
+  
+};
+  
