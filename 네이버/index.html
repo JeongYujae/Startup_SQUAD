@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sly example</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+    <!-- <script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript" defer="defer"></script> -->
+
+
+</head>
+<body>
+<div class="title">
+    Blog Tile
+</div>
+
+
+<div class="topmenu">
+ <div class="frame">
+    <ul class="slide">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li class="activetop"><a href="https://codepen.io/lee85114/pen/gOaqWZv">메뉴6</a></li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+        <li>메뉴11</li>
+        <li>메뉴12</li>
+        <li>메뉴13</li>
+        <li>메뉴14</li>
+        <li>메뉴15</li>
+        <li>메뉴16</li>
+        <li>메뉴17</li>
+        <li>메뉴18</li>
+        <li>메뉴19</li>
+        <li>메뉴20</li>
+        <li>메뉴21</li>
+        <li>메뉴22</li>
+
+    </ul>
+ </div>
+</div>
+
+    <header class="menu">
+      <a>
+        뉴스
+        <span class="num" id="num3">-</span>
+        <span class="num" id="num5">-</span>
+        <span class="num" id="num7">-</span>
+
+      </a>
+    </header>
+
+<script>
+   var on = $('.slide').find('.activetop').index();
+    console.log(on);
+    var options = {
+       horizontal: 1,
+       itemNav: 'centered', //basic , centered,
+       speed: 10,
+       smart: 1,
+       activateOn: 'click',
+       mouseDragging: 1,
+       touchDragging: 1,
+       activateMiddle: 1,
+       releaseSwing: 1,
+       activeClass:   'activetop',
+       startAt: on
+       // itemSelector:1
+    };
+    var frame = new Sly('.frame', options).init();
+</script>
+
+
+<!-- <div>
+  1번 슬라이드 텍스트
+
+  
+</div> -->
+
+<div class="swiper mySwiper">
+
+    <div class="swiper-wrapper" id="targetid">
+      <!-- <div class="swiper-slide" id="slide1" href="menubar/menu1.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nobis laudantium facilis saepe voluptates error ducimus maiores, sed sit unde commodi quo quam quae, adipisci in, esse blanditiis. Nisi tempora voluptatem, libero quisquam cum eaque aliquam sunt possimus dignissimos beatae blanditiis. Corrupti possimus impedit repellat, iure quos quo debitis delectus incidunt soluta quisquam harum! Ducimus iusto, voluptates non quis earum, accusantium harum, totam atque ad esse deleniti! Omnis provident aspernatur dolorem officiis fugiat architecto nisi? Atque similique nihil error autem quae aperiam debitis nam amet voluptas fugiat, corrupti inventore iste fugit. Labore earum eum fugit ipsa ratione incidunt voluptas nam, quo qui ipsam dignissimos voluptate cum aliquam! Blanditiis vel exercitationem ullam in tenetur nam hic, quod esse iure nisi repellat nostrum pariatur, expedita temporibus, molestias sed cumque earum provident impedit incidunt amet. Officiis dolor dolore architecto accusamus quae consequatur impedit voluptate, suscipit, vel et amet laboriosam quo libero voluptatem eligendi. Illo, a, alias maxime esse eveniet, eligendi fugit et accusantium quae dicta quaerat! Nam unde voluptatem magnam numquam, a necessitatibus omnis, tempora illo repellat recusandae, consequatur et! Vero porro dolorem recusandae perspiciatis eum numquam voluptates totam qui ullam quasi, laboriosam molestias eveniet voluptate cumque vel quis labore ab fugit? Accusamus.</div>
+      <div class="swiper-slide" id="slide2" href="menubar/menu2.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam similique minus modi tenetur maxime quae aspernatur et repellendus nulla beatae sequi, expedita, dolor animi eligendi delectus consequuntur excepturi nihil quos, quidem eius. Ipsa, ipsam eos ratione dolor velit consectetur saepe perspiciatis delectus eveniet amet illum quas obcaecati unde, quibusdam reiciendis eligendi fugit numquam, ullam nulla illo veritatis hic facilis voluptates. Dicta saepe assumenda reiciendis consectetur adipisci veritatis tempore unde, accusantium natus soluta eum quos et alias vitae amet voluptatum commodi ipsam tenetur, quae sequi repellendus. Enim, quod! Error doloribus distinctio voluptates, dolor excepturi quod animi iure deserunt repellendus nemo pariatur iusto sunt soluta dolorum! Deleniti ducimus vel iure voluptate officiis fugit aliquid culpa, eos modi consectetur similique et officia tempora iste asperiores sapiente cupiditate cumque molestiae porro, dolorem illum! Molestiae, unde iusto iure tempore itaque maxime tempora tenetur animi, rem natus pariatur amet consectetur quia, mollitia eius dolorem in. Ratione maxime voluptatem similique ad veniam culpa dolor, perferendis delectus voluptatum vero odio dignissimos nulla obcaecati labore ducimus fuga ullam officiis provident est iure. Beatae eaque aliquam dolores quis sint a, impedit commodi atque est, aut repudiandae. Eaque unde magni odit. Necessitatibus nemo blanditiis quidem ea laboriosam consectetur alias delectus et modi error sapiente ipsum pariatur quos veniam, vero ipsam omnis temporibus minima mollitia. Neque, eum quo. Placeat fugiat voluptas saepe ullam fugit aperiam optio, necessitatibus iure sunt. Vitae nisi tenetur, deleniti quis fugit consequuntur repudiandae voluptate pariatur repellat maxime accusamus maiores odit vero sequi impedit, ab debitis, nihil saepe omnis eius. Ratione repellendus expedita id, eum, ut aspernatur similique velit ad maxime voluptates nulla voluptate necessitatibus dolor. Repellat itaque consequatur nemo inventore. Nesciunt, consectetur? At facere temporibus distinctio doloremque dolorem quibusdam delectus non explicabo ipsam facilis velit sed, quas perferendis nihil consequuntur minus possimus dolores quam quod, aspernatur totam!</div>
+      <div class="swiper-slide" id="slide3" href="menubar/menu3.html">lorem400</div> -->
+      <div class="swiper-slide" id="slide1"> ore ab fugit? Accusamus.</div>
+      <div class="swiper-slide" id="slide2"> consequuntur minus possimus dolores quam quod, aspernatur totam!</div>
+      <div class="swiper-slide" id="slide3">lorem400</div>
+
+
+    </div>
+    <div class="paginationbox">
+    <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script>
+
+    var menu = ['Slide 1', 'Slide 2', 'Slide 3']
+    var mySwiper = new Swiper ('.swiper-container', {
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+  
+
+    $('.swiper-slide-active').on('click',function(){
+       console.log('aaa')
+    })
+
+    $(document).ready(function(){
+        $(".swiper-slide").on('click', function(e){
+            console.log(e.target.id)
+
+       })
+    })
+  </script>
+
+
+  <!-- Swiper JS -->
+  <!-- <script src="index.js"></script> -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      //autoplay: {
+        //delay: 2500,
+        //disableOnInteraction: false,
+      //},
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      watchOverflow : true,
+      freemode:false
+    });
+
+
+
+    var target=document.getElementById('targetid');
+
+    var observer= new MutationObserver(mutations =>{
+      var class3=mutations[0].target.childNodes[3].className
+      var class5=mutations[0].target.childNodes[5].className
+      var class7=mutations[0].target.childNodes[7].className
+
+      if (class3 === 'swiper-slide swiper-slide-active'){
+        document.getElementById('num3').classList.remove('num-active');
+        document.getElementById('num5').classList.remove('num-active');
+        document.getElementById('num7').classList.remove('num-active');
+
+        document.getElementById('num3').className='num-active'
+        //alert(document.getElementById('num3').className)
+        console.log('3일치')
+      }
+      else if (class5 === 'swiper-slide swiper-slide-active'){
+        document.getElementById('num3').classList.remove('num-active');
+        document.getElementById('num5').classList.remove('num-active');
+        document.getElementById('num7').classList.remove('num-active');
+
+        document.getElementById('num5').className='num-active'
+        console.log('5일치')
+      }
+      else if (class7 === 'swiper-slide swiper-slide-active'){
+        document.getElementById('num3').classList.remove('num-active');
+        document.getElementById('num5').classList.remove('num-active');
+        document.getElementById('num7').classList.remove('num-active');
+
+        document.getElementById('num7').className='num-active'
+        console.log('7일치')
+      }
+
+
+      //console.log('전체:',mutations[0].target.childNodes)
+      //console.log('3번:',mutations[0].target.childNodes[3].className)
+      //console.log('5번:',mutations[0].target.childNodes[5])
+      //console.log('7번:',mutations[0].target.childNodes[7])
+
+    })
+
+    var config = {
+      childList: true,	// 타겟의 하위 요소 추가 및 제거 감지
+      attributes: true,	// 타켓의 속성 변경를 감지
+      characterData: false,	// 타겟의 데이터 변경 감지
+      subtree: false,	// 타겟의 자식 노드 아래로도 모두 감지
+      attributeOldValue: false,	// 타겟의 속성 변경 전 속성 기록
+      characterDataOldValue: false	// 타겟의 데이터 변경 전 데이터 기록
+    };
+    
+    // 감지 시작
+    observer.observe(target, config);
+    
+    
+  </script>
+
+</body>
+</html>
