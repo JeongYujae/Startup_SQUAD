@@ -43,7 +43,7 @@
     height: 10%;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
 
 .menu >a {
@@ -51,8 +51,8 @@
 }
   
 
-  header > h2 {
-  margin-left:20px;
+  header > a{
+  font-size: 30;
   }
   
   
@@ -64,7 +64,7 @@
   }
   
   header ul > li {
-  font-size:20px;
+  font-size:30px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ body {
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size:20px;
   color: #000;
   margin: 0;
   padding: 0;
@@ -104,7 +104,7 @@ body {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   background: #fff;
   letter-spacing: 2px;
   line-height: 40px;
@@ -183,7 +183,7 @@ body {
 	height: 30px;
 	text-align: center;
 	line-height: 30px;
-	font-size: 12px;
+	font-size: 20px;
 	color:white;
 	opacity: 1;
 	background: rgba(0,0,0,0.2);
@@ -230,7 +230,7 @@ p{
 
 .wrap-vertical{
   display: flex;
-  width: 30%;
+  width: 70%;
   padding: 20px;
   overflow: scroll;
   color: #112031;
@@ -253,13 +253,22 @@ p{
   padding: 20px;
   min-height:max-content;
   background-color: darkgrey;
-  margin-right: 10px;
-  font-size: 25px;
+  margin-right: 20px;
+  font-size: 40px;
   border-radius: 10px;
   
 }
 
-@media screen and (max-width: 768px) {
+
+.title{
+  font-size: 40px;
+}
+
+.menu a{
+  font-size: 40px;
+
+}
+/* @media screen and (max-width: 767px) {
   *{
     margin:0 auto;
     padding: 0;
@@ -281,11 +290,11 @@ p{
   }
 
   .swiper-slide{
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 35px;
   }
   .wrap-vertical{
-    width: 50%;
+    width: 100%;
   }
   .swiper-pagination-bullet{
     line-height: 10px;
@@ -293,10 +302,86 @@ p{
 
   #banner1, #banner2, #banner3, #banner4, #banner5,#banner6,#banner7,#banner8,
   #banner9,#banner10,#banner11,#banner12{
-  padding: 15px;
+  padding: 25px;
 
     font-size: 15px;
   }
+
+  .title{
+    font-size: 28px
+  }
+
+  .menu a{
+    font-size: 28px;
   
-};
+  }
+} */
+
+/* @media (max-with:1024px){
+  .wrap-vertical{
+    width: 50%;
+  }
+
+}
+@media (max-with:768px){
+  .wrap-vertical{
+    width: 60%;
+  }
+} */
+
+
+@media all and (max-width:480px) {
+  *{
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Yeon Sung', cursive;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+  }
+
+  .swiper-slide{
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .wrap-vertical{
+    width: 70%;
+  }
+  .swiper-pagination-bullet{
+    line-height: 10px;
+  }
+
+  #banner1, #banner2, #banner3, #banner4, #banner5,#banner6,#banner7,#banner8,
+  #banner9,#banner10,#banner11,#banner12{
+  padding: 25px;
+  font-size: 15px;
+  margin-right: 10px;
+  }
+
+  .title{
+    font-size: 28px
+  }
+
+  .menu a{
+    font-size: 28px;
+  
+  }
+
+}
+
+
+
+  
+
   

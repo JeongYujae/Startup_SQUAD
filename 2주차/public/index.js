@@ -41,27 +41,14 @@
 // function changeStyle() {
 // 	document.getElementsByClassName("swiper-slide swiper-slide-active")[0].style.borderColor = "red";
 //   }
-
-
-function setClassName() {
-	document.getElementById('ex').className = 'foo';
-	alert(document.getElementById('ex').className);
-  }
   
-
-function example(){
-		$(".swiper-slide").on('change', function(e){
-			console.log('change인식:',e.target.id)
-		})
-}
-
 
 // 이 함수를 변경될때마다 실행해야됨
 // 특정 기준을 가지고 변경이 되면 -> 바로 console에 찍어본느 절차부터
 window.onload = function(){
 	let target= document.getElementsByClassName('swiper-slide swiper-slide-active')
 	
-	console.log(target[0].id)
+	// console.log(target[0].id)
 }
 
 document.addEventListener('change', () =>{
@@ -72,13 +59,6 @@ document.addEventListener('change', () =>{
     // else{
     //     navbar.classList.remove('navbar--dark');
     // }
-})
-
-$(document).mouseup(function(){
-	$(".swiper-slide").on('click', function(e){
-		console.log(e.target.id)
-
-   })
 })
 
 // $(document).swipe( { swipeStatus:swipe2, allowPageScroll:"horizontal" } );

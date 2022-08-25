@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sly example</title>
+    <title>Squad WEEK2</title>
     <link href="index.css" type="text/css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 
@@ -44,7 +44,7 @@
 
 <body>
   
-  <h2>가로 스크롤</h2>
+  <h2 class="title">가로 스크롤</h2>
   <div class="wrap-vertical">
     <p id="banner1">배너1</p>
     <p id="banner2">배너2</p>
@@ -86,106 +86,14 @@
       document.addEventListener("touchend", touchHandler, true);
       document.addEventListener("touchcancel", touchHandler, true);
   }
-  $( document ).ready(function() {
-    console.log( "document loaded" );
-});
+  //$( document ).ready(function() {
+    //console.log( "document loaded" );
+//});
 
   </script>
-  
-<!-- <div class="banner">
-  <div class="tab_left">1번 슬라이드</div>
-  <div class="tab_right">2번 슬라이드</div>
-</div> -->
-
- <!-- <script>
-  $(".tab_left").show().animate({
-    left : '0'
-  });
-  $(".tab_right").animate({
-    left : '100%'
-  }, function(){
-    this.style.display = 'none';
-  });
-  
-  $(".tab_left").animate({
-    left : '-100%'
-  }, function(){
-    this.style.display = 'none';
-  });
-  $(".tab_right").show().animate({
-    left : '0'
-  });
-
-  var startX = 0; 
-  var endX = 0;
-  var sensitive = 90;
-$(document).bind('touchstart mousedown', function(e) {
-	e.preventDefault();	//	이벤트취소
-		if (e.type == 'touchstart' || e.type == 'touchmove'
-			|| e.type == 'touchend' || e.type == 'touchcancel') {
-		var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-		startX = touch.pageX;
-		} else if (e.type == 'mousedown' || e.type == 'mouseup'
-				|| e.type == 'mousemove' || e.type == 'mouseover'
-				|| e.type == 'mouseout' || e.type == 'mouseenter'
-				|| e.type == 'mouseleave') {
-			startX = e.pageX;
-		}
-	});
-	
-	$(document).bind('touchend mouseup', function(e) {
-		e.preventDefault();	//	이벤트취소
-
-		if (e.type == 'touchstart' || e.type == 'touchmove'
-				|| e.type == 'touchend' || e.type == 'touchcancel') {
-			var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-			endX = touch.pageX;
-		} else if (e.type == 'mousedown' || e.type == 'mouseup'
-				|| e.type == 'mousemove' || e.type == 'mouseover'
-				|| e.type == 'mouseout' || e.type == 'mouseenter'
-				|| e.type == 'mouseleave') {
-			endX = e.pageX;
-		}
-		if(startX + sensitive < endX){
-			swipe("left");
-		} else if(startX > endX + sensitive) {
-			swipe("right");
-		}
-	});
-</script> -->
-
-<!-- <div class="topmenu">
- <div class="frame">
-    <ul class="slide">
-        <li>메뉴1</li>
-        <li>메뉴2</li>
-        <li>메뉴3</li>
-        <li>메뉴4</li>
-        <li>메뉴5</li>
-        <li class="activetop"><a href="https://codepen.io/lee85114/pen/gOaqWZv">메뉴6</a></li>
-        <li>메뉴7</li>
-        <li>메뉴8</li>
-        <li>메뉴9</li>
-        <li>메뉴10</li>
-        <li>메뉴11</li>
-        <li>메뉴12</li>
-        <li>메뉴13</li>
-        <li>메뉴14</li>
-        <li>메뉴15</li>
-        <li>메뉴16</li>
-        <li>메뉴17</li>
-        <li>메뉴18</li>
-        <li>메뉴19</li>
-        <li>메뉴20</li>
-        <li>메뉴21</li>
-        <li>메뉴22</li>
-
-    </ul>
- </div>
-</div> -->
 
     <header class="menu">
-      <a>
+      <a class="menubar">
         뉴스
         <span class="num-active" id="num3">=</span>
         <span class="num" id="num5">=</span>
@@ -196,7 +104,7 @@ $(document).bind('touchstart mousedown', function(e) {
 
 <script>
    var on = $('.slide').find('.activetop').index();
-    console.log(on);
+//    console.log(on);
     var options = {
        horizontal: 1,
        itemNav: 'centered', //basic , centered,
@@ -262,7 +170,8 @@ $(document).bind('touchstart mousedown', function(e) {
         게다가 위기관리능력도 출중하다. 득점권 위기에서 30타수 2안타로 피안타율이 6푼7리로 1할이 되지 않는다. 믿음이 갈 수밖에 없다. 이런 모습이라면 충분히 내년시즌 재계약 가능성이 높다.
         
         벤자민도 점차 안정적인 피칭으로 에이스로서의 입지를 다지고 있다. 상승세를 타고 있는 KT의 원동력이다.</div>
-      <div class="swiper-slide" id="slide3">"현대차, 꽤 잘한다(Hyundai is doing pretty well)"
+      <div class="swiper-slide" id="slide3">
+        "현대차, 꽤 잘한다(Hyundai is doing pretty well)"
 
         일론 머스크 테슬라 최고경영자(CEO)는 지난 1분기 미국 전기차 시장에서 테슬라에 이어 현대차가 2위를 기록했다는 보도에 이같이 평가했다. 현대차를 칭찬하면서 견제하는 뉘앙스다.
         
@@ -348,18 +257,14 @@ $(document).bind('touchstart mousedown', function(e) {
     },
   })
 
-  
 
-    $('.swiper-slide-active').on('click',function(){
-       console.log('aaa')
-    })
 
-    $(document).ready(function(){
-        $(".swiper-slide").on('click', function(e){
-            console.log(e.target.id)
+    //$(document).ready(function(){
+        //$(".swiper-slide").on('click', function(e){
+            //console.log(e.target.id)
 
-       })
-    })
+       //})
+    //})
   </script>
 
 
@@ -421,12 +326,6 @@ $(document).bind('touchstart mousedown', function(e) {
 
         document.getElementById('num7').className='num-active'
       }
-
-
-      //console.log('전체:',mutations[0].target.childNodes)
-      //console.log('3번:',mutations[0].target.childNodes[3].className)
-      //console.log('5번:',mutations[0].target.childNodes[5])
-      //console.log('7번:',mutations[0].target.childNodes[7])
 
     })
 
