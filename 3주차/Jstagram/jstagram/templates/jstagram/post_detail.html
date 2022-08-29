@@ -1,0 +1,52 @@
+{% extends 'jstagram/layout.html' %} {% load bootstrap4 humanize jstagram_tags
+%} {% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card-header">
+        <img
+          src="{{ post.author.avatar_url }}"
+          style="width: 32px; height: 32px"
+        />
+        <a href="{% url 'jstagram:user_page' post.author.username %}">
+          {{ post.author.name }}
+        </a>
+      </div>
+
+      <div class="card-body">
+        <strong
+          ><p style="text-align: center; font-size: 30px">
+            {{post.title}}
+          </p></strong
+        >
+        <img src="{{ post.photo.url }}" style="width: 100%" />
+
+        <div
+          style="
+            width: 100%;
+            font-size: 30px;
+            border: 3px solid black;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+          "
+        >
+          {{post.caption}}
+        </div>
+        <a
+          href="/"
+          style="
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            padding: 10px;
+          "
+        >
+          뒤로 가기
+        </a>
+      </div>
+    </div>
+  </div>
+  {% endblock content %}
+</div>

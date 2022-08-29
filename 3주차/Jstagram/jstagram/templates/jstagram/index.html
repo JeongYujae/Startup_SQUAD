@@ -1,0 +1,28 @@
+{% extends 'jstagram/layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                게시판에 오신 것을 환영합니다!
+                <hr/>
+                <a href='{% url "jstagram:post_new" %}' class="btn btn-primary">New Post<a/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                {% for post in post_list %}
+                    <div class="mb-3">
+                        
+                        {% include "jstagram/_post_card.html" %}
+                    </div>
+                {% empty %}
+                    No posting
+                {% endfor %}
+            </div>
+            <div class="col-sm-4">
+                {% include "jstagram/timeline_sidebar.html" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
